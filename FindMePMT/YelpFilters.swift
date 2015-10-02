@@ -9,13 +9,6 @@
 class YelpFilters {
 
     var filters = [
-        Filter(
-            label: "Popular",
-            options: [
-                Option(label: "Offering a Deal", name: "deals_filter", value: "1")
-            ],
-            type: .Default
-        ),
 
         Filter(
             label: "Sort by",
@@ -40,7 +33,15 @@ class YelpFilters {
             ],
             type: .Single
         ),
-
+        
+        Filter(
+            label: "Popular",
+            options: [
+                Option(label: "Offering a Deal", name: "deals_filter", value: "1")
+            ],
+            type: .Default
+        )
+        /*
         Filter(
             label: "Categories",
             name: "category_filter",
@@ -152,6 +153,7 @@ class YelpFilters {
             type: .Multiple,
             numItemsVisible: 3
         )
+*/
     ]
 
     init(instance: YelpFilters? = nil) {

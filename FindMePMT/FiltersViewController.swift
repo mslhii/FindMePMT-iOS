@@ -50,10 +50,9 @@ class FiltersViewController: UITableViewController {
         return label
     }
 
-    //todo:remove
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
-
+        
         let filter = self.model!.filters[indexPath.section] as Filter
         switch filter.type {
             case .Single:
